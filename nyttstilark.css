@@ -1,0 +1,125 @@
+html{
+    background: url(bilder/rays-clouds.jpg) no-repeat center center fixed; 
+}
+body{
+    margin-right: 20%;
+    margin-left: 20%;
+    color: white;
+    text-shadow: 1px 1px #667292;
+    border: 5px outset #8492bb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    background-color: #87bdd8;
+}
+body main article{
+    padding: 5%;
+}
+body main article h1{
+    margin-top: 0%;
+}
+#hovedavsnitt{
+    display: flex;
+    flex-direction: row;
+}
+#husUtside{
+    margin: 2%;
+    height: 50%;
+    width:50%;
+    box-shadow: 2px 2px #667292;
+}
+#husInnside{
+    margin: 2%;
+    height: 50%;
+    width:50%;
+    box-shadow: 2px 2px #667292;
+}
+#historie{
+    display: flex;
+    flex-direction: row;
+}
+#leie{
+    display: flex;
+    flex-direction: row;
+}
+#kontaktinformasjon p a{
+    color: white;
+}
+#kontaktinformasjon{
+    display: flex;
+    flex-direction: column;
+}
+#gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#gallery img{
+    margin: 2%;
+} 
+#gallery img:hover{
+    box-shadow: 3px 3px#667292;
+    width: 525px;
+    height: 350px;
+}
+  
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.horizontal-menu{
+    margin: 0%;
+    widows: 30%;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: none;
+}
+
+.horizontal-menu a {
+    background-color: #cfe0e8;
+    color: black;
+    padding: 3%;
+    text-decoration: none;
+    flex:1 auto;
+    text-align: center;
+}
+
+.horizontal-menu a:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.horizontal-menu a.active {
+    background-color: #87bdd8;
+    color: rgb(0, 0, 0);  
+}
+@media only screen and (max-width: 600px) {
+    #kontaktinformasjon{
+      flex-direction: column;
+    }
+    #leie{
+        flex-direction: column;
+      }
+    #historie{
+        flex-direction: column;
+    }
+    #hovedavsnitt{
+        flex-direction: column;
+    }
+    body{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    #gallery img{
+        width: 300px;
+        height: 200px;
+    }
+    #gallery img:hover{
+        width: 300px;
+        height: 200px;
+    }
+    #leie div iframe{
+        width: 250px;
+        height: 200px;
+    }
+  }
