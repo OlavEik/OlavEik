@@ -1,5 +1,6 @@
 html{
-    background: url(bilder/rays-clouds.jpg) no-repeat center center fixed; 
+    background: url(bilder/rays-clouds.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 body{
     margin-right: 20%;
@@ -24,8 +25,8 @@ body main article h1{
 }
 #husUtside{
     margin: 2%;
-    height: 50%;
-    width:50%;
+    height: 100%;
+    width:100%;
     box-shadow: 2px 2px #667292;
 }
 #husInnside{
@@ -48,6 +49,7 @@ body main article h1{
 #kontaktinformasjon{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 #gallery{
     display:flex;
@@ -58,12 +60,6 @@ body main article h1{
 #gallery img{
     margin: 2%;
 } 
-#gallery img:hover{
-    box-shadow: 3px 3px#667292;
-    width: 525px;
-    height: 350px;
-}
-  
 .gallery img{
     width: 100%;
     height: auto;
@@ -94,8 +90,12 @@ body main article h1{
     color: rgb(0, 0, 0);  
 }
 @media only screen and (max-width: 600px) {
+    .horizontal-menu{
+        flex-direction: column;
+    }
     #kontaktinformasjon{
       flex-direction: column;
+      flex-wrap: wrap;
     }
     #leie{
         flex-direction: column;
@@ -106,20 +106,20 @@ body main article h1{
     #hovedavsnitt{
         flex-direction: column;
     }
+    #hovedavsnitt img{
+        height: 100%;
+        width: 100%;
+    }
     body{
         margin-right: 10%;
         margin-left: 10%;
     }
     #gallery img{
-        width: 300px;
-        height: 200px;
-    }
-    #gallery img:hover{
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
     #leie div iframe{
-        width: 250px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
   }
